@@ -14,6 +14,8 @@ Personal repo of my linux dotfiles for cloning on new machines.
 
 ## Installation
 
+### Initial Install
+
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```bash
@@ -28,6 +30,32 @@ cd ~/dotfiles
 ```
 
 This script installs most of what you'll need installed on your system.
+
+### Secondary Installs and Stowing
+
+Install NVM and use it, required for pyright
+
+```zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | zsh
+```
+
+Add this to .zshrc to load nvm into session
+
+```zsh
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+```
+
+```zsh
+source ~/.zshrc
+```
+
+Install latest version of Node.js
+
+```zsh
+nvm install --lts
+nvm use --lts
+```
 
 then use GNU stow to create symlinks
 

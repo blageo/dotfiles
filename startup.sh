@@ -1,9 +1,11 @@
+#!/bin/zsh
+
 # Add neovim daily repository to apt sources
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update && sudo apt upgrade -y 
 
 # Install required packages for setup
-sudo apt install git stow zsh make unzip npm gcc ripgrep neovim xclip python3.10-venv -y
+sudo apt install git stow zsh make unzip npm gcc ripgrep neovim xclip pip python3.10-venv -y
 
 # Make zsh the default shell
 sudo chsh -s $(which zsh)
