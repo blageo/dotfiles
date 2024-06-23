@@ -1,0 +1,9 @@
+[submodule "tpm"]
+	path = tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "vim-tmux-navigator"]
+	path = vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "tmux"]
+	path = tmux
+	url = https://github.com/catppuccin/tmux.git
