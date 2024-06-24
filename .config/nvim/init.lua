@@ -374,6 +374,7 @@ require('lazy').setup({
             'mypy',
             'cpptools',
             'markdownlint',
+            'cmake-language-server',
           },
         },
       }, -- NOTE: Must be loaded before dependants
