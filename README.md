@@ -50,6 +50,12 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 source ~/.zshrc
 ```
 
+Set zsh to use Starship
+
+```zsh
+eval "$(starship init zsh)"
+```
+
 Install latest version of Node.js
 
 ```zsh

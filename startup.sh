@@ -54,4 +54,3 @@ chmod +x ~/apps/cpptools/extension/debugAdapters/bin/OpenDebugAD7
 
 # Install starship and add to .zshrc
 curl -sS https://starship.rs/install.sh | sh
-echo eval "$(starship init zsh)" >> ~/dotfiles/.zshrc 
