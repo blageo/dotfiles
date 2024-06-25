@@ -372,9 +372,6 @@ require('lazy').setup({
         opts = {
           ensure_installed = {
             'mypy',
-            'cpptools',
-            'markdownlint',
-            'cmake-language-server',
           },
         },
       }, -- NOTE: Must be loaded before dependants
@@ -580,7 +577,7 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
       })
-      require('mason-tool-installer').setup { ensure_installed = ensure_installed }
+      require('mason-tool-installer').setup { ensure_installed = { 'markdownlint', 'mypy', 'cpptools', 'cmake' } }
 
       require('mason-lspconfig').setup {
         handlers = {
