@@ -29,10 +29,12 @@ return {
       vim.keymap.set('n', '<Leader>db', dap.toggle_breakpoint, {})
       vim.keymap.set('n', '<Leader>dc', dap.continue, {})
 
+      local home = os.getenv 'HOME'
+
       dap.adapters.cppdbg = {
         id = 'cppdbg',
         type = 'executable',
-        command = '/home/gbland/apps/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+        command = home .. '/apps/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
       }
 
       dap.configurations.cpp = {
