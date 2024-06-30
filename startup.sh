@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Add neovim daily repository to apt sources
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
